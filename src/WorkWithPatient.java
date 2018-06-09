@@ -16,7 +16,7 @@ public class WorkWithPatient {
         }
     }
 
-    private Patient addPatient(java.lang.String name, int age, boolean insurance, String residence) {
+    Patient addPatient(java.lang.String name, int age, boolean insurance, String residence) {
         Patient pat = new Patient(name, age, insurance, residence);
         return pat;
     }
@@ -42,7 +42,7 @@ public class WorkWithPatient {
         return patient;
     }
 
-    public void findPacientForAge(Patient[] patients) {
+    void findPacientForAge(Patient[] patients) {
         Scanner scan = new Scanner(System.in);
         int countPatient = 0;
         System.out.println("Введите возраст пациента");
@@ -56,7 +56,7 @@ public class WorkWithPatient {
             System.out.println("Такого пациента не существует");
     }
 
-    private void findPacientForName(Patient[] patients) {
+    void findPacientForName(Patient[] patients) {
         Scanner scan = new Scanner(System.in);
         int countPatient = 0;
         System.out.println("Введите ФИО пациента");
@@ -70,7 +70,7 @@ public class WorkWithPatient {
             System.out.println("Такого пациента не существует ");
     }
 
-    public void findPatient(Patient[] patient) {
+     void findPatient(Patient[] patient) {
         Scanner scan = new Scanner(System.in);
         int i = 10;
         System.out.println("Если хотите нати пациента по возрасту введите 1 , если хотите найти по имени введите 2, выход из программы введите 0");
